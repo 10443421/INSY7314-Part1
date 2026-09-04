@@ -1,0 +1,8 @@
+# Node dependencies folder
+node_modules/
+
+# Environment configuration secrets
+.env
+
+# SSL private keys and certificates
+certs/
