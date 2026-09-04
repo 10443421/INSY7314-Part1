@@ -42,8 +42,10 @@ const validateRegisterInput = (req, res, next) => {
 
     req.body = 
     {
+        name: trimedName,
         email: trimedEmail,
-        password: trimedPassword
+        password: trimedPassword,
+        role: trimedRole
     };
     next();
 };
@@ -77,4 +79,8 @@ const validateLoginInput = (req, res, next) => {
     };
 
     next();
+};
+
+module.exports = {
+    validateRegisterInput, validateLoginInput
 };
