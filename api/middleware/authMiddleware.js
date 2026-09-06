@@ -1,3 +1,4 @@
+//line 2-29 The IIE (2014, p.92-93)
 const jwt = require('jsonwebtoken');
 
 const verifyToken = (req, res, next) => {
@@ -26,3 +27,6 @@ const verifyToken = (req, res, next) => {
 };
 
 module.exports = verifyToken;
+
+//Reference List
+//The Independent Institute of Education (IIE), 2025. APPLICATION DEVELOPMENT SECURITY [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.

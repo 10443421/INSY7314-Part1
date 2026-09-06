@@ -1,3 +1,4 @@
+//line 2-107 The IIE (2014, p.34-36,86-88) 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 //const { use } = require('react');
@@ -20,7 +21,8 @@ const registerUser = async (req, res, next) => {
         const saltRounds = 12;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-        //Builds user record with the hashed password
+        //Builds user record with the hashed password  
+        //The IIE (2014, p.34)
         const newUser = {
             id: `u${users.length +1}`,
             name,
@@ -33,6 +35,7 @@ const registerUser = async (req, res, next) => {
         users.push(newUser);
 
         //return successful without returning the password hashed
+        //The IIE (2014, p.34)
         res.status(201).json({
             message:'User registered successfully',
             date: {
@@ -102,3 +105,6 @@ const getUserProfile = (req, res) => {
 };
 
 module.exports = {registerUser, loginUser, getUserProfile};
+
+//Reference List
+//The Independent Institute of Education (IIE), 2025. APPLICATION DEVELOPMENT SECURITY [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.

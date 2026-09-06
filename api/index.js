@@ -1,3 +1,4 @@
+//line 2-99 The IIE (2014, p.40-42)
 require('dotenv').config(); //Load environment variables from .env file
 
 const express = require('express');
@@ -96,3 +97,6 @@ if (USE_HTTPS) {
     console.log(`HTTP server running on port ${PORT}`);
   });
 }
+
+//Reference List
+//The Independent Institute of Education (IIE), 2025. APPLICATION DEVELOPMENT SECURITY [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.
