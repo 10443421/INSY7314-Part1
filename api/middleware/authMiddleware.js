@@ -5,7 +5,7 @@ const verifyToken = (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     //checks if header exists and starts with Bearer
-    if(!authHeader || !authHeader.startWith('Bearer')){
+    if(!authHeader || !authHeader.startsWith('Bearer')){
         return res.status(401).json({error: 'Access denied. No token provided'});
     }
 
