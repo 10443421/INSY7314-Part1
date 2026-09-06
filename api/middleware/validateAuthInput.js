@@ -1,3 +1,4 @@
+//line 2-87 The IIE (2014, p.36-38)
 const allowedRoles = ['Client', 'Freelancer', 'Admin']; //list of roles for HustleHub+
 
 const validateRegisterInput = (req, res, next) => {
@@ -84,3 +85,6 @@ const validateLoginInput = (req, res, next) => {
 module.exports = {
     validateRegisterInput, validateLoginInput
 };
+
+//Reference List
+//The Independent Institute of Education (IIE), 2025. APPLICATION DEVELOPMENT SECURITY [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.
