@@ -1,0 +1,42 @@
+$kind: http-request
+name: Login - Success
+method: POST
+url: '{{baseUrl}}/api/auth/Login'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "testuser@example.com",
+      "password": "SecurePass123"
+    }
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status is 200", function () {
+        pm.response.to.have.status(200);
+      });
+
+      pm.test("Response has message 'Login successful'", function () {
+        const json = pm.response.json();
+        pm.expect(json.message).to.eql("Login successful");
+      });
+
+      pm.test("Response has token that is a non-empty string", function () {
+        const json = pm.response.json();
+        pm.expect(json.token).to.be.a("string").and.to.have.length.above(0);
+      });
+
+      pm.test("Response has user.email equal to testuser@example.com", function () {
+        const json = pm.response.json();
+        pm.expect(json.user.email).to.eql("testuser@example.com");
+      });
+
+      const json = pm.response.json();
+      if (json.token) {
+        pm.environment.set("token", json.token);
+      }

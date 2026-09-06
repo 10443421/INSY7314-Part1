@@ -1,0 +1,24 @@
+$kind: http-request
+name: Get Profile - Invalid Token
+method: GET
+url: '{{baseUrl}}/api/auth/profile'
+order: 10000
+auth:
+  type: bearer
+  credentials:
+    - key: token
+      value: invalidtoken123
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status is 403", function () {
+        pm.response.to.have.status(403);
+      });
+
+      pm.test("Response error contains 'Invalid' or 'expired'", function () {
+        const json = pm.response.json();
+        pm.expect(json.error).to.satisfy(function (msg) {
+          return msg.includes("Invalid") || msg.includes("expired");
+        });
+      });
