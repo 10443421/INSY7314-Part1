@@ -26,7 +26,7 @@ const validateRegisterInput = (req, res, next) => {
         return res.status(400).json({error: 'Name must be between 2 and 50 characters'});
     }
 
-    const emailReg = /^\S+@S+\.\S+$/;
+    const emailReg = /^\S+@\S+\.\S+$/;
     if (!emailReg.test(trimedEmail))
     {
         return res.status(400).json({error: 'Invalid email address format'});

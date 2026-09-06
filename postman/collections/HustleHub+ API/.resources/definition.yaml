@@ -1,0 +1,3 @@
+$kind: collection
+name: HustleHub+ API
+description: 'Authentication API collection for HustleHub+ — covers registration, login, and all error/invalid scenarios.'

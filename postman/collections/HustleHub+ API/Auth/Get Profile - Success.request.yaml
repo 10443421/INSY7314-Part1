@@ -1,0 +1,32 @@
+$kind: http-request
+name: Get Profile - Success
+method: GET
+url: '{{baseUrl}}/api/auth/profile'
+order: 3000
+auth:
+  type: bearer
+  credentials:
+    - key: token
+      value: '{{token}}'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status is 200", function () {
+        pm.response.to.have.status(200);
+      });
+
+      pm.test("Response has data.id that exists", function () {
+        const json = pm.response.json();
+        pm.expect(json.data.id).to.exist;
+      });
+
+      pm.test("Response has data.email that exists", function () {
+        const json = pm.response.json();
+        pm.expect(json.data.email).to.exist;
+      });
+
+      pm.test("Response has data.role that exists", function () {
+        const json = pm.response.json();
+        pm.expect(json.data.role).to.exist;
+      });

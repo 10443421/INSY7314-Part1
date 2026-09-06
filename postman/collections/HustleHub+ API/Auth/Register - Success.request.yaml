@@ -1,0 +1,49 @@
+$kind: http-request
+name: Register - Success
+method: POST
+url: '{{baseUrl}}/api/auth/register'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Test User",
+      "email": "testuser@example.com",
+      "password": "SecurePass123",
+      "role": "Client"
+    }
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status is 201", function () {
+        pm.response.to.have.status(201);
+      });
+
+      pm.test("Response has message 'User registered successfully'", function () {
+        const json = pm.response.json();
+        pm.expect(json.message).to.eql("User registered successfully");
+      });
+
+      pm.test("Response has date.id that exists", function () {
+        const json = pm.response.json();
+        pm.expect(json.date.id).to.exist;
+      });
+
+      pm.test("Response has date.email equal to testuser@example.com", function () {
+        const json = pm.response.json();
+        pm.expect(json.date.email).to.eql("testuser@example.com");
+      });
+
+      pm.test("Response has date.role equal to Client", function () {
+        const json = pm.response.json();
+        pm.expect(json.date.role).to.eql("Client");
+      });
+
+      pm.test("Response does NOT contain password field in date", function () {
+        const json = pm.response.json();
+        pm.expect(json.date).to.not.have.property("password");
+      });

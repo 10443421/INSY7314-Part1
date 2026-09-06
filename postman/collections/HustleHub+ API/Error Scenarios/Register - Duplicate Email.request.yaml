@@ -1,0 +1,29 @@
+$kind: http-request
+name: Register - Duplicate Email
+method: POST
+url: '{{baseUrl}}/api/auth/register'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Test User",
+      "email": "testuser@example.com",
+      "password": "SecurePass123",
+      "role": "Client"
+    }
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status is 409", function () {
+        pm.response.to.have.status(409);
+      });
+
+      pm.test("Response error contains 'already'", function () {
+        const json = pm.response.json();
+        pm.expect(json.error).to.include("already");
+      });
