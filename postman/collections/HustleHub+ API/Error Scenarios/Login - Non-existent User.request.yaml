@@ -1,7 +1,7 @@
 $kind: http-request
 name: Login - Non-existent User
 method: POST
-url: '{{baseUrl}}/api/auth/Login'
+url: '{{baseUrl}}/api/auth/login'
 order: 7000
 headers:
   - key: Content-Type

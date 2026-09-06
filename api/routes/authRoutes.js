@@ -18,7 +18,7 @@ const verifyToken = require('../middleware/authMiddleware');
 router.post('/register', validateRegisterInput, registerUser);
 
 // POST /api/auth/login - Login with validation
-router.post('/Login', validateLoginInput, loginUser);
+router.post('/login', validateLoginInput, loginUser);
 
 // GET /api/auth/profile - Protected route requiring valid bearer JWT
 router.get('/profile', verifyToken, getUserProfile);

@@ -6,7 +6,7 @@ const validateRegisterInput = (req, res, next) => {
     //checks if all fields have input
     if (!name || !email || !password || !role)
     {
-        return response.status(400).json({error: 'All fields are required'})
+        return res.status(400).json({error: 'All fields are required'})
     }
 
     //makes sure all input is a string
@@ -67,7 +67,7 @@ const validateLoginInput = (req, res, next) => {
     const trimedEmail = email.trim().toLowerCase();
     const trimedPassword = password.trim();
 
-    const emailReg = /^\S+@S+\.\S+$/;
+    const emailReg = /^\S+@\S+\.\S+$/;
     if (!emailReg.test(trimedEmail))
     {
         return res.status(400).json({error: 'Invalid email address format'});
