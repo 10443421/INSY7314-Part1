@@ -280,4 +280,4 @@ OWASP, 2024. *Password Storage Cheat Sheet*. [Online] Available at: <https://che
 
 Pandey, A., 2026. *Understanding HTTP for Backend Engineers: Where It All Starts*. [Online] JavaGuides. Available at: <https://medium.com/javaguides/understanding-http-for-backend-engineers-where-it-all-starts-56c633b9bb0e> [Accessed 7 September 2026].
 
-The Independent Institute of Education (IIE), 2025. APPLICATION DEVELOPMENT SECURITY [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.
+The Independent Institute of Education (IIE), 2025. *APPLICATION DEVELOPMENT SECURITY* [INSY7314 Module Manual] The Independent Institute of Education: Unpublished.
