@@ -252,7 +252,7 @@ Screenshots of the API responses are in `postman/Postman Testing Screenshots/`. 
 - Caitlyne Allison Lessing, ST10443399 - API functionality and HTTPS Implementation
 - Ethan Hughes, ST10438080 - README
 - Madiki Caleb Kabelo Phoshoko, ST10443421 - Checking code structure and Postman Testing
-- , ST10308017 - Video Demonstration and Architecture Diagram
+- Gomolemo Ramalope, ST10308017 - Video Demonstration and Architecture Diagram
 
 All work was committed to this repository, and the commit history shows who worked on what.
 
@@ -260,22 +260,22 @@ All work was committed to this repository, and the commit history shows who work
 
 ## References
 
-Clarke, J., 2009. *SQL Injection Attacks and Defense*. [Online] Syngress. Available at: https://www.sciencedirect.com/book/9781597494243/sql-injection-attacks-and-defense [Accessed 7 September 2026].
+Clarke, J., 2009. *SQL Injection Attacks and Defense*. [Online] Syngress. Available at: <https://www.sciencedirect.com/book/9781597494243/sql-injection-attacks-and-defense> [Accessed 7 September 2026].
 
-Express, 2024. *Production Best Practices: Security*. [Online] Available at: https://expressjs.com/en/advanced/best-practice-security.html [Accessed 7 September 2026].
+Express, 2024. *Production Best Practices: Security*. [Online] Available at: <https://expressjs.com/en/advanced/best-practice-security.html> [Accessed 7 September 2026].
 
-GeeksforGeeks, 2026. *JSON Web Token (JWT)*. [Online] Available at: https://www.geeksforgeeks.org/web-tech/json-web-token-jwt/ [Accessed 7 September 2026].
+GeeksforGeeks, 2026. *JSON Web Token (JWT)*. [Online] Available at: <https://www.geeksforgeeks.org/web-tech/json-web-token-jwt/> [Accessed 7 September 2026].
 
-JWT.io, 2024. *Introduction to JSON Web Tokens*. [Online] Available at: https://jwt.io/introduction [Accessed 7 September 2026].
+JWT.io, 2024. *Introduction to JSON Web Tokens*. [Online] Available at: <https://jwt.io/introduction> [Accessed 7 September 2026].
 
-Microsoft, 2026. Best Practices for Protecting Secrets. [Online] Microsoft Learn. Available at: https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices [Accessed 7 September 2026].
+Microsoft, 2026. Best Practices for Protecting Secrets. [Online] Microsoft Learn. Available at: <https://learn.microsoft.com/en-us/azure/security/fundamentals/secrets-best-practices> [Accessed 7 September 2026].
 
-Node.js, 2024. *Node.js Documentation: HTTPS*. [Online] Available at: https://nodejs.org/api/https.html [Accessed 7 September 2026].
+Node.js, 2024. *Node.js Documentation: HTTPS*. [Online] Available at: <https://nodejs.org/api/https.html> [Accessed 7 September 2026].
 
-Oladimeji Ipaye | Data Pro  (2026). How to Write an Effective README File for Github Projects in 2026 (Complete Guide + Free Tool). [Online] Available at: https://www.youtube.com/watch?v=nN59j4TELcE [Accessed 7 Sept. 2026].
+Oladimeji Ipaye | Data Pro  (2026). How to Write an Effective README File for Github Projects in 2026 (Complete Guide + Free Tool). [Online] Available at: <https://www.youtube.com/watch?v=nN59j4TELcE> [Accessed 7 Sept. 2026].
 
-OWASP, 2021. *A03:2021 - Injection*. [Online] Available at: https://owasp.org/Top10/2021/A03_2021-Injection/ [Accessed 7 September 2026].
+OWASP, 2021. *A03:2021 - Injection*. [Online] Available at: <https://owasp.org/Top10/2021/A03_2021-Injection/> [Accessed 7 September 2026].
 
-OWASP, 2024. *Password Storage Cheat Sheet*. [Online] Available at: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html [Accessed 7 September 2026].
+OWASP, 2024. *Password Storage Cheat Sheet*. [Online] Available at: <https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html> [Accessed 7 September 2026].
 
-Pandey, A., 2026. *Understanding HTTP for Backend Engineers: Where It All Starts*. [Online] JavaGuides. Available at: https://medium.com/javaguides/understanding-http-for-backend-engineers-where-it-all-starts-56c633b9bb0e [Accessed 7 September 2026].
+Pandey, A., 2026. *Understanding HTTP for Backend Engineers: Where It All Starts*. [Online] JavaGuides. Available at: <https://medium.com/javaguides/understanding-http-for-backend-engineers-where-it-all-starts-56c633b9bb0e> [Accessed 7 September 2026].
