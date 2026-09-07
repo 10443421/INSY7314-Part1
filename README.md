@@ -41,6 +41,7 @@ Not built yet: MongoDB, the React frontend, gigs, bookings, transactions, income
 
 HustleHub+ is built on the MERN stack: MongoDB, Express, React and Node.js. The diagram below shows the full system, with the parts that exist in Part 1 marked as built and the rest marked as planned.
 
+![System architecture design] (system_architecture_design.jpeg)
 
 The three tiers are kept apart on purpose. The client never talks to the data layer, and it never sees a password hash or the JWT secret. Everything it is allowed to do has to go through an Express route first, so there is one place where the rules get enforced instead of many.
 
