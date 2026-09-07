@@ -4,7 +4,7 @@ HustleHub+ is a freelance marketplace platform. Freelancers advertise the work t
 
 This repository is Part 1 of the project, which is the backend foundation. It covers user registration, login, and the security around those two things. Gigs, bookings, transactions and the React frontend are built in Part 2. We started with security here rather than adding it later, because the data this platform holds (passwords, contact details, earnings) is exactly the kind of data that causes real damage when it leaks.
   
-**Demonstration video:** [add video link here]
+**Demonstration video:** <https://youtu.be/VjVBKxKAJ6Q>
 
 ---
 
