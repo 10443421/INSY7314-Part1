@@ -96,9 +96,9 @@ api/
 └── package.json
 ```
 
-Routes only decide which middleware and controller a URL goes to. Validation and the JWT check sit in middleware so they run before any logic does, and the controllers can assume the data reaching them is already clean. Anything that throws ends up at the single error handler.
+Routes just decide which middleware and controller a request goes to. Validation and the JWT check run before any of the real logic, so by the time a controller runs, it can trust the data is already clean. Anything that goes wrong ends up at one error handler.
 
-Middleware order in `index.js` is not accidental. Helmet and CORS run before the body parser, so a request from a disallowed origin is turned away before we spend any effort parsing what it sent.
+We also chose the order of things in index.js on purpose. Helmet and CORS run before the body parser, so a request from the wrong origin gets turned away before we waste time reading what it sent.
 
 ---
 
